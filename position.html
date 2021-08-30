@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>CSS 포지셔닝</title>
+	<style>
+		.box1{
+			float:left;
+			width:100px;
+			background:#ffd800;
+			margin-right:10px;
+			padding:20px;
+		}
+		.box2 {
+      /* position: static; */
+			position:relative;
+			left:-50px;
+			top:30px;
+			width:300px;
+			background:#0094ff;
+			float:left;
+			padding:20px;
+		}
+    #wrap{
+			position:relative;
+			width:300px;
+			height:300px;
+			border:1px solid #ccc;
+		}
+		.box{
+			position:absolute;
+			width:50px;
+			height:50px;
+			background:#0094ff;
+		}
+		#crd1{ top:0; left:0; }
+		#crd2{ top:0; right:0; }
+		#crd3{ bottom:0; left:0; }
+		#crd4{ bottom:0; right:0; }
+		#crd5{ top:100px; left:100px; }
+    #fx{
+			position:fixed;
+			top:5px;
+			right:5px;
+			width:50px;
+			height:50px;
+			background:#ff6a00;
+    
+		}
+		#content { width:400px;	}
+		p { line-height:30px;}
+	</style>
+</head>
+<body>
+  <div style="width:100%;height:120px;">
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+  </div> 
+  <div id="wrap">
+		<div class="box" id="crd1">1</div>
+		<div class="box" id="crd2">2</div>
+		<div class="box" id="crd3">3</div>
+		<div class="box" id="crd4">4</div>
+		<div class="box" id="crd5">5</div>
+	</div>
+  <div id="fx"></div>
+	<div id="content">
+		<p>'Cause I-I-I'm in the stars tonight<br>
+So watch me bring the fire and set the night alight<br>
+Shoes on, get up in the morn'<br>
+Cup of milk, let's rock and roll<br>
+King Kong, kick the drum, rolling on like a Rolling Stone<br>
+Sing song when I'm walking home<br>
+Jump up to the top, LeBron<br>
+Ding dong, call me on my phone<br>
+Ice tea and a game of ping pong<br>
+This is getting heavy<br>
+Can you hear the bass boom? I'm ready (woo hoo)<br>
+Life is sweet as honey<br>
+Yeah, this beat cha-ching like money, huh<br>
+Disco overload, I'm into that, I'm good to go<br>
+I'm diamond, you know I glow up<br>
+Hey, so let's go<br>
+'Cause I-I-I'm in the stars tonight<br>
+So watch me bring the fire and set the night alight (hey)<br>
+Shining through the city with a little funk and soul<br>
+So I'ma light it up like dynamite, whoa oh oh </p>
+	</div>
+</body>
+</html>

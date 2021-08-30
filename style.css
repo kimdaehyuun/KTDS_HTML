@@ -50,9 +50,9 @@ aside {
 #main > section {
   float:left;
     width:500px;
-    padding:20px;
-    margin:10px;
-    border-bottom:1px dotted #222;
+    padding:5px;
+    margin:0px;
+    border-bottom:1px solid #222;
 }
 
 section > p, section>table {
