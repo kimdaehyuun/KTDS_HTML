@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var scores = [100, 90,40, 55, 65, 88];
+        console.log("scores : " + scores);
+        var totalScore = 0;
+        var averageScore = 0;
+        
+        for (var i in scores) {
+            totalScore += scores[i];
+        }
+        console.log("totalScore : " + totalScore);
+        averageScore = totalScore / scores.length;
+        console.log("averageScore : " + averageScore);
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
